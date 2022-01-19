@@ -23,11 +23,15 @@ img {
 }
 .links {
   background: #55c5e8;
-  padding: 1em;
+  padding: 1em 2.5%;
+  width: 30%;
+  float: left;
 }
 .rechts {
   background: #fd6943;
-  padding: 1em 2em;
+  padding: 1em 2.5%;
+  width: 60%;
+  float: right;
 }
 .sectie {
   background: #f7f7f7;
