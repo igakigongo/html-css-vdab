@@ -1,0 +1,49 @@
+/* algemeen */
+body {
+  font-size: 100%;
+  background-color: #fff;
+}
+
+/* structuur */
+#page {
+  /* typografie */
+
+  /* kleurs en backgrounds */
+
+  /* box model */
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav main'
+    'footer footer';
+  grid-template-columns: 20% 80%;
+  margin: 0 auto;
+  width: 1024px;
+}
+
+#page > header {
+  background-color: lightgrey;
+  grid-area: header;
+}
+
+#page > nav {
+  background-color: darkgrey;
+  color: #fff;
+  grid-area: nav;
+}
+
+#page > main {
+  grid-area: main;
+}
+
+#page > footer {
+  /* typo */
+  text-align: center;
+
+  /* kleurs */
+  background-color: lightgray;
+
+  /* block  */
+  grid-area: footer;
+  height: 50px;
+}
