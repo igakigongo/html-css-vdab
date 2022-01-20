@@ -1,0 +1,41 @@
+/* algemeen */
+body { ... }
+h1,h2,h3,h4 { ... }
+a { ... }
+
+/* structuur */
+header { ... }
+footer{ ... }
+div#wrapper { ... }
+
+/* content */
+article { ... }
+article h2{ ... }
+
+/* hoofdmenu */
+ul#hoofdmenu { ... }
+ul#hoofdmenu li { ... }
+
+-- binnen de selectors kunt u deze volgorde gebruiken
+nav ul li a {
+  /* typografie */
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.3em;
+  text-transform: uppercase
+
+ /* kleur en backgrounds */
+  color: #e0e0d5;
+  background: url(../images/nav-bg.gif) no-repeat bottom left;
+
+ /* box */
+  float: left;
+  display: block;
+  width: 3.8em;
+  padding: .8em 1em .8em 1em;
+  margin: 0;
+  border: none;
+}
+
+/* https://icolorpalette.com/color/grey-brown */
