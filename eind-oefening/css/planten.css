@@ -1,7 +1,29 @@
 /* algemeen */
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
+
   background-color: #fff;
+
+  margin: 0;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* structuur */
@@ -13,16 +35,15 @@ body {
   /* box model */
   display: grid;
   grid-template-areas:
-    'header header'
-    'nav main'
-    'footer footer';
+    "header header"
+    "nav main"
+    "footer footer";
   grid-template-columns: 20% 80%;
   margin: 0 auto;
   width: 1024px;
 }
 
 #page > header {
-  background-color: lightgrey;
   grid-area: header;
 }
 
@@ -46,4 +67,77 @@ body {
   /* block  */
   grid-area: footer;
   height: 50px;
+}
+
+#zoekenform {
+  display: flex;
+  flex-direction: row;
+}
+
+#zoekenform > div {
+  width: 50%;
+}
+
+#zoekenform input[type="text"],
+#zoekenform select {
+  width: 200px;
+}
+
+#zoekenform div.form-group {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control-checkbox,
+.form-control-radio {
+  font-size: 0.8rem;
+}
+
+/* content */
+.mainheader {
+  text-align: right;
+
+  background-color: lightgray;
+}
+
+.banner {
+  background-color: purple;
+}
+
+.banner img {
+  width: calc(1024px * 0.8);
+}
+
+#zoekenform div.form-group {
+  font-size: 0.875rem;
+}
+
+.sidenav {
+  font-family: monospace;
+
+  list-style-type: none;
+
+  /* override browser defaults */
+  padding: 2rem;
+  margin: 0;
+}
+
+.sidenav li {
+  margin: 1rem 0;
+}
+
+.sidenav li a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.sidenav li a.active,
+.sidenav li a:active,
+.sidenav li a:hover {
+  color: lightskyblue;
 }

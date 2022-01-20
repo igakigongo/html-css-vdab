@@ -2,16 +2,110 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <title>Planten Shop</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <title>Plantenshop</title>
     <link rel="stylesheet" href="css/planten.css" />
   </head>
   <body>
     <div id="page">
-      <header>Header</header>
-      <nav>Side Navigation</nav>
-      <main>Main</main>
-      <footer>Footer</footer>
+      <header class="mainheader p1">
+        <h1>De Plantenshop</h1>
+        <p>een oefening HTML-CSS voor de basis opleiding</p>
+      </header>
+      <nav>
+        <ul class="sidenav">
+          <li><a>Home</a></li>
+          <li><a class="active">Shop</a></li>
+          <li><a>Verzorging</a></li>
+          <li><a>Galerij</a></li>
+          <li><a>Over ons</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="p1">
+          <h2>Online shop</h2>
+          <p>maak hier uw aankopen</p>
+        </section>
+        <section class="banner p1 px-0">
+          <img src="img/flowers_1024_400.jpg" alt="flowers" />
+        </section>
+        <section class="p1">
+          <h2>Zoeken</h2>
+          <p>zoek een plant die past voor uw tuin</p>
+          <form action="js_form_ontvanger.html" method="get" id="zoekenform">
+            <div class="keuzen">
+              <div class="form-group">
+                <label for="categorie">wat zoekt u?</label>
+                <div>
+                  <select class="form-control" name="categorie" id="categorie">
+                    <option value="">-- kies een categorie --</option>
+                    <option value="bomen">bomen</option>
+                    <option value="struiken">struiken</option>
+                    <option value="bloemen">bloemen</option>
+                    <option value="vaste planten">vaste planten</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="bodemsoort">welke bodem?</label>
+                <div>
+                  <select
+                    class="form-control"
+                    name="bodemsoort"
+                    id="bodemsoort"
+                  >
+                    <option value="">-- kies een bodemsoort --</option>
+                    <option value="zandig">zandig</option>
+                    <option value="klei">klei</option>
+                    <option value="leem">leem</option>
+                    <option value="bosgrond">bosgrond</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="standplaats">standplaats: </label>
+                <div class="form-control form-control-radio">
+                  <input type="radio" name="standplaats" value="zonning" />
+                  zonning
+                  <input type="radio" name="standplaats" value="halfschaduw" />
+                  halfschaduw
+                  <input type="radio" name="standplaats" value="schaduw" />
+                  schaduw
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="seizoen">bloeit in: </label>
+                <div class="form-control form-control-checkbox">
+                  <input type="checkbox" name="seizoen" value="lente" />
+                  lente
+                  <input type="checkbox" name="seizoen" value="zomer" />
+                  zomer
+                  <input type="checkbox" name="seizoen" value="herfst" />
+                  herfst
+                  <input type="checkbox" name="seizoen" value="winter" />
+                  winter
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" display="none"></label>
+                <div>
+                  <input type="submit" value="zoek" />
+                </div>
+              </div>
+            </div>
+            <div class="zoekopnaam">
+              <div class="form-group">
+                <label for="naam">zoek op naam: </label>
+                <div class="form-control">
+                  <input type="text" name="naam" id="naam" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; Copyright vdab</p>
+      </footer>
     </div>
   </body>
 </html>
